@@ -29,4 +29,4 @@ Console.WriteLine(copy);     // id: g1 | position: 100,200 | name: Logo
 | File | What it shows |
 |---|---|
 | `graphic/graphic.cs` | `Graphic` element in a design tool — clone and reposition without re-constructing |
-| `job-posting/job_posting.cs` | Job posting cloned as a template for similar roles |
+| `job-posting/job-posting.cs` | Job posting cloned as a template for similar roles |

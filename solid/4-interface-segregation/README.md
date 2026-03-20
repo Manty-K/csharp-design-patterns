@@ -6,7 +6,7 @@
 
 Don't bundle unrelated methods into a single interface. If a class is forced to implement methods it doesn't need, it signals the interface is too broad. Split it into role-specific interfaces instead.
 
-## Problem (`it_firm/bad.cs`, `smart-home/bad.cs`)
+## Problem (`it-firm/bad.cs`, `smart-home/bad.cs`)
 
 `ILead` groups three distinct responsibilities together. `Manager` can't code, so it throws on `WorkOnTask()`. `Programmer` can't manage, so it throws on `AssignTask()` and `CreateSubTask()`. Both classes implement a contract they can only partially honour.
 
@@ -21,7 +21,7 @@ class Manager    : ILead { public void WorkOnTask() => throw new Exception(...);
 class Programmer : ILead { public void AssignTask() => throw new Exception(...); }
 ```
 
-## Solution (`it_firm/good.cs`, `smart-home/good.cs`)
+## Solution (`it-firm/good.cs`, `smart-home/good.cs`)
 
 Split into two focused interfaces. Each class implements only what it actually does.
 
