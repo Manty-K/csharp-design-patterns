@@ -20,11 +20,15 @@ solid/                          ← 5 SOLID principles
 
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
-  2-structural/                 ← Adapter (sms, weather); others planned
+  2-structural/                 ← Adapter (sms, weather); Decorator (formator, coffee)
     adapter/
       README.md
       sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
       weather/weather.cs        ← WeatherAdaptor wraps WeatherAPI behind IWeatherService
+    decorator/
+      README.md
+      formator/formator.cs      ← BoldDecorator, UpperCaseDecorator, ExclamationDecorator stack on IText
+      coffee/coffee.cs          ← MilkDecorator, ChocoDecorator wrap ICoffee; cost and description accumulate
 ```
 
 ## Conventions
