@@ -10,4 +10,4 @@ Structural patterns describe how to compose objects and classes into larger stru
 | [Decorator](./decorator/) | Add behaviour to objects dynamically without subclassing |
 | [Facade](./facade/) | Provide a simplified interface to a complex subsystem |
 | Flyweight | Share common state between many fine-grained objects to save memory |
-| Proxy | Provide a surrogate that controls access to another object |
+| [Proxy](./proxy/) | Provide a surrogate that controls access to another object |

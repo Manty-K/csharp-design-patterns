@@ -33,6 +33,10 @@ design_patterns/
       README.md
       order/order.cs            ← OrderFacade.PlaceOrder coordinates Payment, Inventory, Shipping, Notification
       home-theater/home-theater.cs ← HomeTheaterFacade.WatchMovie orchestrates Projector, SoundSystem, StreamingPlayer
+    proxy/
+      README.md
+      database/database.cs      ← DatabaseProxy enforces role-based access before delegating to Database
+      file-reader/file-reader.cs ← FileReaderCacheProxy serves cached content or falls back to MyFileReader
 ```
 
 ## Conventions
