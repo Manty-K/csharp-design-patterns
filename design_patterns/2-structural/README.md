@@ -5,7 +5,7 @@ Structural patterns describe how to compose objects and classes into larger stru
 | Pattern | One-liner |
 |---|---|
 | [Adapter](./adapter/) | Make incompatible interfaces work together |
-| Bridge | Decouple abstraction from implementation so both can vary independently |
+| [Bridge](./bridge/) | Decouple abstraction from implementation so both can vary independently |
 | [Composite](./composite/) | Treat individual objects and compositions of objects uniformly |
 | [Decorator](./decorator/) | Add behaviour to objects dynamically without subclassing |
 | [Facade](./facade/) | Provide a simplified interface to a complex subsystem |

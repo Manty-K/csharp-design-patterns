@@ -20,11 +20,15 @@ solid/                          ← 5 SOLID principles
 
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
-  2-structural/                 ← Adapter (sms, weather); Decorator (formator, coffee); Composite (filesystem, company)
+  2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Proxy
     adapter/
       README.md
       sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
       weather/weather.cs        ← WeatherAdaptor wraps WeatherAPI behind IWeatherService
+    bridge/
+      README.md
+      tv/tv.cs                  ← BasicRemote/SmartRemote (abstraction) × SamsungTV/SonyTV (implementation) mix freely
+      channel/channel.cs        ← AlertNotification/PromoNotification (abstraction) × EmailChannel/SmsChannel (implementation)
     composite/
       README.md
       filesystem/filesystem.cs  ← Folder (composite) and File (leaf) implement IFileSystemItem; Print recurses with indentation
