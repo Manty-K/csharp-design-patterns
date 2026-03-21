@@ -20,7 +20,7 @@ solid/                          ← 5 SOLID principles
 
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
-  2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Proxy
+  2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
     adapter/
       README.md
       sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
@@ -41,6 +41,10 @@ design_patterns/
       README.md
       order/order.cs            ← OrderFacade.PlaceOrder coordinates Payment, Inventory, Shipping, Notification
       home-theater/home-theater.cs ← HomeTheaterFacade.WatchMovie orchestrates Projector, SoundSystem, StreamingPlayer
+    flyweight/
+      README.md
+      tree/tree.cs              ← TreeType (flyweight) shared by many Tree (context) instances; TreeTypeFactory caches by name+texture
+      character/character.cs    ← CharacterType (flyweight) shared by many Character (context) instances; factory caches by symbol+font+size
     proxy/
       README.md
       database/database.cs      ← DatabaseProxy enforces role-based access before delegating to Database
