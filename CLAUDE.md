@@ -21,7 +21,7 @@ solid/                          ← 5 SOLID principles
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
   2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
-  3-behavioral/                 ← Observer, Strategy
+  3-behavioral/                 ← Command, Observer, Strategy
     adapter/
       README.md
       sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
@@ -54,6 +54,10 @@ design_patterns/
       README.md
       order/order.cs            ← OrderService notifies EmailNotifier/SmsNotifier on PlaceOrder; observers subscribe/unsubscribe at runtime
       stock-market/stock-market.cs ← StockMarket tracks per-stock observer lists; MobileAlert/EmailAlert notified only on actual price changes
+    command/
+      README.md
+      text-editor/text-editor.cs ← Invoker maintains undo stack; WriteCommand/DeleteCommand wrap ITextEditor; delete captures removed text for undo
+      remote/remote.cs           ← RemoteControl (invoker) presses TurnOnCommand/TurnOffCommand against Light (receiver); PressUndo walks history
     strategy/
       README.md
       discount/discount.cs      ← PriceCalculator delegates to IDiscountStrategy; PercentageDiscount/FlatDiscount/NoDiscount swap at runtime
