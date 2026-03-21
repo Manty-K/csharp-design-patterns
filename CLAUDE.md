@@ -29,6 +29,10 @@ design_patterns/
       README.md
       formator/formator.cs      ← BoldDecorator, UpperCaseDecorator, ExclamationDecorator stack on IText
       coffee/coffee.cs          ← MilkDecorator, ChocoDecorator wrap ICoffee; cost and description accumulate
+    facade/
+      README.md
+      order/order.cs            ← OrderFacade.PlaceOrder coordinates Payment, Inventory, Shipping, Notification
+      home-theater/home-theater.cs ← HomeTheaterFacade.WatchMovie orchestrates Projector, SoundSystem, StreamingPlayer
 ```
 
 ## Conventions
