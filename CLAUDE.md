@@ -20,11 +20,15 @@ solid/                          ← 5 SOLID principles
 
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
-  2-structural/                 ← Adapter (sms, weather); Decorator (formator, coffee)
+  2-structural/                 ← Adapter (sms, weather); Decorator (formator, coffee); Composite (filesystem, company)
     adapter/
       README.md
       sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
       weather/weather.cs        ← WeatherAdaptor wraps WeatherAPI behind IWeatherService
+    composite/
+      README.md
+      filesystem/filesystem.cs  ← Folder (composite) and File (leaf) implement IFileSystemItem; Print recurses with indentation
+      company/company.cs        ← Manager (composite) and IndividualEmployee (leaf) implement IEmployee; org chart prints recursively
     decorator/
       README.md
       formator/formator.cs      ← BoldDecorator, UpperCaseDecorator, ExclamationDecorator stack on IText
