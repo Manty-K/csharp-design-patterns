@@ -21,6 +21,7 @@ solid/                          ← 5 SOLID principles
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
   2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
+  3-behavioral/                 ← Observer
     adapter/
       README.md
       sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
@@ -49,6 +50,10 @@ design_patterns/
       README.md
       database/database.cs      ← DatabaseProxy enforces role-based access before delegating to Database
       file-reader/file-reader.cs ← FileReaderCacheProxy serves cached content or falls back to MyFileReader
+    observer/
+      README.md
+      order/order.cs            ← OrderService notifies EmailNotifier/SmsNotifier on PlaceOrder; observers subscribe/unsubscribe at runtime
+      stock-market/stock-market.cs ← StockMarket tracks per-stock observer lists; MobileAlert/EmailAlert notified only on actual price changes
 ```
 
 ## Conventions
