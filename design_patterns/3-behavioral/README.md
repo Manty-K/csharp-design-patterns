@@ -11,3 +11,4 @@ Behavioral patterns define how objects communicate and distribute responsibility
 | [Observer](observer/README.md) | Notify dependents automatically when an object's state changes |
 | [State](state/README.md) | Allow an object to alter its behavior when its internal state changes |
 | [Strategy](strategy/README.md) | Define a family of interchangeable algorithms and swap them at runtime |
+| [Template Method](template/README.md) | Define the skeleton of an algorithm in a base class, deferring specific steps to subclasses |

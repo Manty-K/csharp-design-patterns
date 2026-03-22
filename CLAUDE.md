@@ -25,7 +25,7 @@ solid/                          ← 5 SOLID principles
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
   2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
-  3-behavioral/                 ← Chain of Responsibility, Command, Observer, State, Strategy
+  3-behavioral/                 ← Chain of Responsibility, Command, Observer, State, Strategy, Template Method
 ```
 
 ## Conventions
