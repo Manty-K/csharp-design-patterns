@@ -25,47 +25,7 @@ solid/                          ← 5 SOLID principles
 design_patterns/
   1-creational/                 ← Singleton, Builder, Factory, Abstract Factory, Prototype
   2-structural/                 ← Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
-  3-behavioral/                 ← Command, Observer, Strategy
-    adapter/
-      README.md
-      sms/sms.cs                ← SmsAdapter wraps LegacySmsService behind INotification
-      weather/weather.cs        ← WeatherAdaptor wraps WeatherAPI behind IWeatherService
-    bridge/
-      README.md
-      tv/tv.cs                  ← BasicRemote/SmartRemote (abstraction) × SamsungTV/SonyTV (implementation) mix freely
-      channel/channel.cs        ← AlertNotification/PromoNotification (abstraction) × EmailChannel/SmsChannel (implementation)
-    composite/
-      README.md
-      filesystem/filesystem.cs  ← Folder (composite) and File (leaf) implement IFileSystemItem; Print recurses with indentation
-      company/company.cs        ← Manager (composite) and IndividualEmployee (leaf) implement IEmployee; org chart prints recursively
-    decorator/
-      README.md
-      formator/formator.cs      ← BoldDecorator, UpperCaseDecorator, ExclamationDecorator stack on IText
-      coffee/coffee.cs          ← MilkDecorator, ChocoDecorator wrap ICoffee; cost and description accumulate
-    facade/
-      README.md
-      order/order.cs            ← OrderFacade.PlaceOrder coordinates Payment, Inventory, Shipping, Notification
-      home-theater/home-theater.cs ← HomeTheaterFacade.WatchMovie orchestrates Projector, SoundSystem, StreamingPlayer
-    flyweight/
-      README.md
-      tree/tree.cs              ← TreeType (flyweight) shared by many Tree (context) instances; TreeTypeFactory caches by name+texture
-      character/character.cs    ← CharacterType (flyweight) shared by many Character (context) instances; factory caches by symbol+font+size
-    proxy/
-      README.md
-      database/database.cs      ← DatabaseProxy enforces role-based access before delegating to Database
-      file-reader/file-reader.cs ← FileReaderCacheProxy serves cached content or falls back to MyFileReader
-    observer/
-      README.md
-      order/order.cs            ← OrderService notifies EmailNotifier/SmsNotifier on PlaceOrder; observers subscribe/unsubscribe at runtime
-      stock-market/stock-market.cs ← StockMarket tracks per-stock observer lists; MobileAlert/EmailAlert notified only on actual price changes
-    command/
-      README.md
-      text-editor/text-editor.cs ← Invoker maintains undo stack; WriteCommand/DeleteCommand wrap ITextEditor; delete captures removed text for undo
-      remote/remote.cs           ← RemoteControl (invoker) presses TurnOnCommand/TurnOffCommand against Light (receiver); PressUndo walks history
-    strategy/
-      README.md
-      discount/discount.cs      ← PriceCalculator delegates to IDiscountStrategy; PercentageDiscount/FlatDiscount/NoDiscount swap at runtime
-      sorting/sorting.cs        ← Sorter delegates to ISortStrategy; BubbleSort/MergeSort/QuickSort swap at runtime
+  3-behavioral/                 ← Chain of Responsibility, Command, Observer, Strategy
 ```
 
 ## Conventions
