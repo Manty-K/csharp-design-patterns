@@ -11,6 +11,10 @@ An educational reference repository of C# code examples demonstrating **SOLID de
 ## Repository Structure
 
 ```
+references/                     ← Supplementary reference material
+  advanced-csharp-reference.md  ← Advanced C# language features
+  dotnet-internals-reference.md ← .NET runtime and internals
+
 solid/                          ← 5 SOLID principles
   <n>-<principle-name>/
     README.md                   ← Principle explanation

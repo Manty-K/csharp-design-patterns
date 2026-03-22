@@ -24,6 +24,14 @@ Gang of Four patterns grouped by category. Each pattern has focused `.cs` exampl
 | [Structural](design_patterns/2-structural/README.md) | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
 | [Behavioral](design_patterns/3-behavioral/README.md) | Command, Observer, Strategy |
 
+### [References](references/)
+Supplementary reference material for C# and .NET internals.
+
+| File | Contents |
+|---|---|
+| [Advanced C#](references/advanced-csharp-reference.md) | Advanced C# language features |
+| [.NET Internals](references/dotnet-internals-reference.md) | .NET runtime and internals |
+
 ## Notes
 
 - No build system or external dependencies — all files are standalone C# meant to be read.
