@@ -23,8 +23,9 @@ HTTPRequest request = new HttpRequestBuilder()
     .build();  // throws if URL or Method is missing
 ```
 
-## Example
+## Examples
 
 | File | What it shows |
 |---|---|
 | `http/http.cs` | `HttpRequestBuilder` builds an `HTTPRequest` with URL, method, body, and headers — URL and method are required, the rest are optional |
+| `query/query.cs` | `QueryBuilder` assembles a SQL `Query` with a required table and optional `SELECT`, `WHERE`, `ORDER BY`, and `LIMIT` clauses that layer up via chaining |
