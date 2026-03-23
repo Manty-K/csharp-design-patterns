@@ -15,3 +15,4 @@ Behavioral patterns define how objects communicate and distribute responsibility
 | [State](state/README.md) | Allow an object to alter its behavior when its internal state changes |
 | [Strategy](strategy/README.md) | Define a family of interchangeable algorithms and swap them at runtime |
 | [Template Method](template/README.md) | Define the skeleton of an algorithm in a base class, deferring specific steps to subclasses |
+| [Visitor](visitor/README.md) | Add new operations to an object structure without modifying its element classes |
