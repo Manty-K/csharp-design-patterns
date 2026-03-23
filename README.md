@@ -22,7 +22,7 @@ Gang of Four patterns grouped by category. Each pattern has focused `.cs` exampl
 |---|---|
 | [Creational](design_patterns/1-creational/README.md) | Singleton, Builder, Factory, Abstract Factory, Prototype |
 | [Structural](design_patterns/2-structural/README.md) | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
-| [Behavioral](design_patterns/3-behavioral/README.md) | Command, Observer, Strategy |
+| [Behavioral](design_patterns/3-behavioral/README.md) | Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor |
 
 ### [References](references/)
 Supplementary reference material for C# and .NET internals.

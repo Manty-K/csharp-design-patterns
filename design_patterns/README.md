@@ -35,6 +35,13 @@ Deal with object communication. Define how objects interact and distribute respo
 
 | Pattern | Intent |
 |---|---|
+| [Chain of Responsibility](3-behavioral/chain-of-responsibility/README.md) | Pass a request along a chain of handlers until one handles it |
 | [Command](3-behavioral/command/README.md) | Encapsulate a request as an object to support undo, queuing, and decoupled invocation |
+| [Iterator](3-behavioral/iterator/README.md) | Sequentially access elements of a collection without exposing its underlying representation |
+| [Mediator](3-behavioral/mediator/README.md) | Centralize complex communication between objects through a single mediator object |
+| [Memento](3-behavioral/memento/README.md) | Capture and restore an object's internal state without violating encapsulation |
 | [Observer](3-behavioral/observer/README.md) | Notify dependents automatically when an object's state changes |
+| [State](3-behavioral/state/README.md) | Allow an object to alter its behavior when its internal state changes |
 | [Strategy](3-behavioral/strategy/README.md) | Define a family of interchangeable algorithms and swap them at runtime |
+| [Template Method](3-behavioral/template/README.md) | Define the skeleton of an algorithm in a base class, deferring specific steps to subclasses |
+| [Visitor](3-behavioral/visitor/README.md) | Add new operations to an object structure without modifying its element classes |
