@@ -33,5 +33,5 @@ doc.save("/tmp/output.pdf");
 
 | File | What it shows |
 |---|---|
-| `factory.cs` | `DocumentFactory` with `TxtDocumentFactory` and `PdfDocumentFactory` — same interface, different output formats |
+| `document/document.cs` | `DocumentFactory` with `TxtDocumentFactory` and `PdfDocumentFactory` — same interface, different output formats |
 | `notification/notification.cs` | Notification factory variant |

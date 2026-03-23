@@ -27,4 +27,4 @@ HTTPRequest request = new HttpRequestBuilder()
 
 | File | What it shows |
 |---|---|
-| `http.cs` | `HttpRequestBuilder` builds an `HTTPRequest` with URL, method, body, and headers — URL and method are required, the rest are optional |
+| `http/http.cs` | `HttpRequestBuilder` builds an `HTTPRequest` with URL, method, body, and headers — URL and method are required, the rest are optional |

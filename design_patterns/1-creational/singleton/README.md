@@ -36,8 +36,8 @@ Logger.GetInstance().Log("Request received");
 
 | File | What it shows |
 |---|---|
-| `logger/singleton.cs` | Application logger — one file, one writer |
-| `asset-manager/singleton.cs` | Game asset manager — loaded once, shared everywhere |
+| `logger/logger.cs` | Application logger — one file, one writer |
+| `asset-manager/asset-manager.cs` | Game asset manager — loaded once, shared everywhere |
 
 ## Caution
 
